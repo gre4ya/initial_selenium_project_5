@@ -9,12 +9,20 @@ public class Driver {
 
     private Driver(){}
 
-    private static WebDriver getDriver(){
+    public static WebDriver getDriver(){
         if(driver == null){
             System.setProperty("webdriver.chrome.driver", "/Users/gre4ya/IdeaProjects/initial_selenium_project_5/chromedriver");
             driver = new ChromeDriver();
             driver.manage().window().maximize();
         }
         return driver;
+    }
+
+
+    public static void quitDriver(){
+        if(driver != null) {
+            driver.manage().deleteAllCookies();
+            driver.quit();
+        }
     }
 }

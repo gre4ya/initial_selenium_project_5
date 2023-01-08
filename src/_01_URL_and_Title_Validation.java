@@ -10,6 +10,8 @@ public class _01_URL_and_Title_Validation {
         // 2. Test validation
         WebDriver driver = new ChromeDriver();
 
+        driver.manage().window().maximize();
+
         driver.get("https://www.techglobalschool.com/"); // no cashes (cash keep history)
 
         if(driver.getTitle().equals("SDET Bootcamp | TechGlobal")) System.out.println("Title Validation PASSED");
@@ -18,7 +20,6 @@ public class _01_URL_and_Title_Validation {
         else System.out.println("URL Validation FAILED");
         // driver.navigate().to("https://www.techglobalschool.com/"); // keep cashes
 
-        driver.manage().window().maximize();
         //driver.manage().window().fullscreen();
 
         // 3. Teardown

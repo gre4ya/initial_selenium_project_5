@@ -7,6 +7,7 @@ public class _03_Locators_id {
     public static void main(String[] args) throws InterruptedException {
 
         /*
+        TEST CASE
         Go to https://techglobal-training.netlify.app/
         Validate the company logo is displayed
          */

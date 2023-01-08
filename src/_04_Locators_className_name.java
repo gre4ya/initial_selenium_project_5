@@ -27,7 +27,6 @@ public class _04_Locators_className_name {
             driver.findElement(By.id("card-1")).click();
             Waiter.pause(2);
 
-
             System.out.println(driver.findElement(By.id("item_kiwi")).isDisplayed() ?
                     "\"Kiwi\" item validation is PASSED" : "\"Kiwi\" item validation is FAILED");
 
@@ -36,12 +35,8 @@ public class _04_Locators_className_name {
 
             System.out.println(driver.findElement(By.className("item_grapes")).isDisplayed() ?
                     "\"Grapes\" item validation is PASSED" : "\"Grapes\" item validation is FAILED");
-
         }
-        catch (Exception e){
-            System.out.println("TEST FAILED due to: " + e.getMessage());
-        }
-
+        catch (Exception e){System.out.println("TEST FAILED due to: " + e.getMessage());}
         finally {Driver.quitDriver();}
     }
 }

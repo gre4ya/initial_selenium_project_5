@@ -45,13 +45,10 @@ public class Practice01 {
 
             System.out.println(driver.findElement(By.xpath("//a[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']")).isDisplayed() ?
                     "\"Create New Account\" Button Validation PASSED" : "\"Create New Account\" Button Validation FAILED");
-
-
         }
         catch (Exception e){
             System.out.println("TEST FAILED due to: " + e.getMessage());;
         }
-
         finally {Driver.quitDriver();}
     }
 }

@@ -22,11 +22,13 @@ public class Practice01 {
             System.out.println(driver.findElement(By.cssSelector("img[class='fb_logo _8ilh img']")).isDisplayed() ?
                     "Logo Validation PASSED" : "Logo Validation FAILED");
 
+            //driver.findElement(By.xpath("//img[contains(@class, 'fb_logo']")).isDisplayed();
+
             System.out.println(driver.findElement(By.tagName("h2")).isDisplayed() ?
                     "Heading2 Validation PASSED" : "Heading2 Validation FAILED");
 
             System.out.println(driver.findElement(By.id("email")).isDisplayed() ?
-                    "\"Email or Phone Number\" box Validation PASSED" : "\"Email or Phone Number\" box Validation FAiled");
+                    "\"Email or Phone Number\" box Validation PASSED" : "\"Email or Phone Number\" box Validation FAILED");
 
             System.out.println(driver.findElement(By.id("passContainer")).isDisplayed() ?
                     "\"Password\" input box Validation PASSED" : "\"Password\" input box Validation FAILED");

@@ -1,6 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import utils.Driver;
+import utils.Waiter;
 
 public class _02_Recap_Validate_Google {
     public static void main(String[] args) {
@@ -31,17 +32,20 @@ public class _02_Recap_Validate_Google {
          */
 
         driver.get("https://www.google.com/");
-
-        driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Software Engineer in Test");
+        Waiter.pause(2);
+        //driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Software Engineer in Test");
+        driver.findElement(By.name("q")).sendKeys("Software Engineer in Test");
+        Waiter.pause(2);
         //driver.findElement(By.xpath("(//input[@name='btnK'])[1]")).click();
         driver.findElement(By.name("btnK")).click();
+        Waiter.pause(2);
 
         System.out.println(
                 driver.findElement(
                         By.xpath(
-                                "(//div[@class='yuRUbf'])[1]")).getText().contains("Software Engineer in Test") ?
-                "Validation PASSED" : "Validation FAILED");
-
+                                "(//div[@class='yuRUbf'])[1]")).getText().contains("Software Engineer in Test")
+                        ? "Validation PASSED" : "Validation FAILED");
+        Waiter.pause(2);
 
         Driver.quitDriver();
     }

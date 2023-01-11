@@ -22,7 +22,7 @@ public class Practice01 {
             System.out.println(driver.findElement(By.cssSelector("img[class='fb_logo _8ilh img']")).isDisplayed() ?
                     "Logo Validation PASSED" : "Logo Validation FAILED");
 
-            //driver.findElement(By.xpath("//img[contains(@class, 'fb_logo']")).isDisplayed();
+            //driver.findElement(By.xpath("//img[contains(@class, 'fb_logo')]")).isDisplayed();
 
             System.out.println(driver.findElement(By.tagName("h2")).isDisplayed() ?
                     "Heading2 Validation PASSED" : "Heading2 Validation FAILED");
@@ -30,7 +30,7 @@ public class Practice01 {
             System.out.println(driver.findElement(By.id("email")).isDisplayed() ?
                     "\"Email or Phone Number\" box Validation PASSED" : "\"Email or Phone Number\" box Validation FAILED");
 
-            System.out.println(driver.findElement(By.id("passContainer")).isDisplayed() ?
+            System.out.println(driver.findElement(By.id("pass")).isDisplayed() ?
                     "\"Password\" input box Validation PASSED" : "\"Password\" input box Validation FAILED");
 
             System.out.println(driver.findElement(By.xpath("//button[@name='login']")).isDisplayed() ?
@@ -39,13 +39,13 @@ public class Practice01 {
             System.out.println(driver.findElement(By.xpath("//button[@name='login']")).isEnabled() ?
                     "\"Log In\" button IS Enabled" : "\"Log In\" button IS NOT Enabled");
 
-            System.out.println(driver.findElement(By.partialLinkText("Forgot")).isDisplayed() ?
+            System.out.println(driver.findElement(By.cssSelector("._6ltj>a")).isDisplayed() ?
                     "\"Forgot Password?\" Link Validation PASSED" : "\"Forgot Password?\" Link Validation FAILED");
 
 //            System.out.println(driver.findElement(By.cssSelector("a[data-testid='open-registration-form-button']")).isDisplayed() ?
 //                    "\"Create New Account\" Button Validation PASSED" : "\"Create New Account\" Button Validation FAILED");
 
-            System.out.println(driver.findElement(By.xpath("//a[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']")).isDisplayed() ?
+            System.out.println(driver.findElement(By.xpath("//a[contains(@class, '_42ft')]")).isDisplayed() ?
                     "\"Create New Account\" Button Validation PASSED" : "\"Create New Account\" Button Validation FAILED");
         }
         catch (Exception e){

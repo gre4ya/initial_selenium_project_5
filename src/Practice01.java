@@ -19,8 +19,12 @@ public class Practice01 {
             System.out.println(driver.getCurrentUrl().equals("https://www.facebook.com/") ?
                     "URL Validation PASSED" : "URL Validation FAILED");
 
-            System.out.println(driver.findElement(By.cssSelector("img[class='fb_logo _8ilh img']")).isDisplayed() ?
+            //System.out.println(driver.findElement(By.cssSelector("img[class='fb_logo _8ilh img']")).isDisplayed() ?
+            //       "Logo Validation PASSED" : "Logo Validation FAILED");
+
+            System.out.println(driver.findElement(By.cssSelector("img[class*='fb_logo']")).isDisplayed() ?
                     "Logo Validation PASSED" : "Logo Validation FAILED");
+
 
             //driver.findElement(By.xpath("//img[contains(@class, 'fb_logo')]")).isDisplayed();
 

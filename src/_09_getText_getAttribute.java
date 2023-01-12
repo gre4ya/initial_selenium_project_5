@@ -4,8 +4,6 @@ import org.openqa.selenium.WebElement;
 import utils.Driver;
 import utils.Waiter;
 
-import java.util.List;
-
 public class _09_getText_getAttribute {
     public static void main(String[] args) {
         /*
@@ -55,8 +53,6 @@ public class _09_getText_getAttribute {
         System.out.println(subscribeButton.getCssValue("font-family"));
         System.out.println(subscribeButton.getCssValue("margin"));
 
-
         Driver.quitDriver();
-
     }
 }

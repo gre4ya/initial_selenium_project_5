@@ -2,7 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import utils.Driver;
 
-public class Practice01 {
+public class Assignment01_Facebook {
     public static void main(String[] args) {
 
         try {
